@@ -1,0 +1,6 @@
+{
+  "name": "despise.js",
+  "version": "0.0.1",
+  "description": "a library to generate fake data for test, such as name, email, phone, number and so on.",
+  "repository": "https://github.com/plantain-00/despise.js"
+}
