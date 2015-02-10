@@ -29,12 +29,22 @@ class BoolGenerator extends GeneratorBase<Boolean> {
 class DateGenerator extends GeneratorBase<Date> {
     generate():Date {
         var totalMiliseconds:number = Math.random() * (new Date().getTime());
-        var d:Date;
+        var d = new Date();
         d.setTime(totalMiliseconds);
         return d;
     }
 }
 
+class IntGenerator extends GeneratorBase<number> {
+    minValue:number;
+    maxValue:number;
+
+    generate():number {
+        return Math.floor(Math.random() * (this.maxValue - this.minValue)) + this.minValue;
+    }
+}
+
 declare var module:any;
-module.exports.BoolGenerator = new BoolGenerator();
-module.exports.DateGenerator = new DateGenerator();
+module.exports.boolGenerator = new BoolGenerator();
+module.exports.dateGenerator = new DateGenerator();
+module.exports.intGenerator = new IntGenerator();
