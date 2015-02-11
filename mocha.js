@@ -31,4 +31,78 @@ describe('despise.js', function () {
             }
         })
     });
+    describe('#FloatGenerator()', function () {
+        it('should pass', function () {
+            generator.floatGenerator.minValue = 0;
+            generator.floatGenerator.maxValue = 100;
+            var result = generator.floatGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+
+
+    describe('#NumberCharGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.numberCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#SpecialCharGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.specialCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishUpperCaseCharGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishUpperCaseCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishLowerCaseCharGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishLowerCaseCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#MixCharGenerator()', function () {
+        it('should pass', function () {
+            generator.mixCharGenerator.generators.push(generator.specialCharGenerator);
+            generator.mixCharGenerator.generators.push(generator.numberCharGenerator);
+            generator.mixCharGenerator.generators.push(generator.englishUpperCaseCharGenerator);
+            generator.mixCharGenerator.generators.push(generator.englishLowerCaseCharGenerator);
+            var result = generator.mixCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+
+
+    describe('#PhoneNumberGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.phoneNumberGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#PasswordGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.passwordGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
 });
