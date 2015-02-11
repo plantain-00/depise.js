@@ -87,6 +87,14 @@ describe('despise.js', function () {
             }
         })
     });
+    describe('#ChineseCharGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.chineseCharGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
 
 
     describe('#PhoneNumberGenerator()', function () {
@@ -100,6 +108,86 @@ describe('despise.js', function () {
     describe('#PasswordGenerator()', function () {
         it('should pass', function () {
             var result = generator.passwordGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EmailGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.emailGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishWordGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishWordGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishSurnameGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishSurnameGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishSentenceGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishSentenceGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishFirstNameGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishFirstNameGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#EnglishNameGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.englishNameGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#ChineseSurnameGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.chineseSurnameGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#ChineseNameGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.chineseNameGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#ChinesePhraseGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.chinesePhraseGenerator.generateMuch(10, 20);
+            for (var i = 0; i < result.length; i++) {
+                console.log(result[i]);
+            }
+        })
+    });
+    describe('#ChineseSentenceGenerator()', function () {
+        it('should pass', function () {
+            var result = generator.chineseSentenceGenerator.generateMuch(10, 20);
             for (var i = 0; i < result.length; i++) {
                 console.log(result[i]);
             }
